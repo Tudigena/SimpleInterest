@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.bg-container {
+    background-color: #E0A4D0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 50px;
+}
+
+.main {
+    display: flex;
+}
+
+.title {
+    font-family: "Verdana";
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #0000000;
+}
+
+
+.container-left {
+    background-color: #ffffff;
+    width: 50%;
+    max-width: 600px;
+    min-width: 350px;
+    padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+
+.container-right {
+    background-color: #ffffff;
+    align-items: center;
+    width: 50%;
+    max-width: 600px;
+    min-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+input {
+    margin-bottom: 20px;
+    border: none;
+    font-size: 20px;
+    border-bottom: 2px solid #585858;
+    color: #585858;
+    padding: 2px 15px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2.4px solid red;
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .container-left {
+        margin-bottom: 10px;
+        max-width: 350px;
+        padding: 30px 15px;
+    }
+
+    .container-right {
+        max-width: 350px;
+        padding: 30px 15px;
+    }
+
+    label {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper input {
+    width: 100%;
+}
+
+.time-wrapper input {
+    width: 60%;
+}
+
+select {
+    width: 35%;
+    border: 1px solid #585858;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 3%;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    display: block;
+    background-color: #01e26e;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.error-msg {
+    color: red;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .container-left {
+        margin-bottom: 10px;
+        max-width: 350px;
+        padding: 30px 15px;
+    }
+
+    .container-right {
+        max-width: 350px;
+        padding: 30px 15px;
+    }
+
+    label {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    button {
+        margin: 10px auto 0 auto;
+        padding: 15px 40px;
+        font-size: 16px;
+    }
+
+    .error-msg {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+}
+
+#result {
+    margin-top: 30px;
+    color: #585858;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#result div {
+    margin-bottom: 10px;
+}
+
+#result span {
+    color: red;
+    font-weight: 500;
+
+}

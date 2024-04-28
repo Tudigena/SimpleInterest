@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <div class="bg-container">
+        <h1 class="title">Simple Interest calculator</h1>
+        <div class="main">
+            <div class="container-left">
+                <div class="input-wrapper">
+                    <div class="wrapper">
+                        <label for="principal">Principal (Rs/-):</label>
+                        <input type="number" id="principal" />
+                    </div>
+                    <div class="wrapper">
+                        <label for="rate">Rate (%):</label>
+                        <input type="number" id="rate" />
+                    </div>
+                </div>
+                <label for="time">Time:</label>
+                <div class="time-wrapper">
+                    <input type="number" id="time" />
+                    <select name="duration" id="duration">
+                        <option value="year">Year</option>
+                        <option value="month">Month</option>
+                        <option value="day">Day</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <button id="calculate-btn">Calculate</button>
+                    <button id="reset-btn">Reset</button>
+                </div>
+                <p class="error-msg" id="error"></p>
+            </div>
+            <div class="container-right" id="containerRight">
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
